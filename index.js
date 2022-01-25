@@ -11,7 +11,7 @@ const CLIENT_SECRET = process.env.CLIENT_SUPER_SECRET
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN_ENV
 const REFRESH_TOKEN = process.env.REFRESH_TOKEN
 const log = console.log;
-const port = 5000;
+const port = process.env.PORT || 5000;
 const app = express();
 
 app.use(cors());
