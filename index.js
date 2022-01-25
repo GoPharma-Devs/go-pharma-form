@@ -9,6 +9,7 @@ const CLIENT_ID = process.env.CLIENT_ID_SECRET
 
 const CLIENT_SECRET = process.env.CLIENT_SUPER_SECRET
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN_ENV
+const REFRESH_TOKEN = process.env.REFRESH_TOKEN
 const log = console.log;
 const port = 5000;
 const app = express();
@@ -28,7 +29,7 @@ const contactEmail = nodemailer.createTransport({
     user: 'gopharmadev@gmail.com',
     clientId: CLIENT_ID,
     clientSecret: CLIENT_SECRET,
-    refreshToken: "1//04pPDtTOwDKKpCgYIARAAGAQSNwF-L9IrvctcechC_yxPArE63bu-PcuXaYC_fTN1jXNmQcIg_gxDxRQ8ZMufh0dVhG4Zkvze9Cc",
+    refreshToken: REFRESH_TOKEN,
     accessToken: ACCESS_TOKEN,
   },
 });
